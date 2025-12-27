@@ -374,68 +374,93 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
       <motion.section
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.9 }}
-        style={{
-          maxWidth: 1000,
-          margin: "180px auto 0",
-          textAlign: "center",
-          padding: "80px 40px",
-          borderRadius: 40,
-          background:
-            "linear-gradient(120deg, rgba(99,102,241,0.15), rgba(34,211,238,0.15), rgba(168,85,247,0.15))",
-          boxShadow: "0 40px 80px rgba(0,0,0,0.6)",
-        }}
-      >
-        <h2
-          style={{
-            fontSize: 36,
-            fontWeight: 800,
-            marginBottom: 24,
-          }}
-        >
-          Let’s Build Something Great
-        </h2>
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.9 }}
+  style={{
+    maxWidth: 1000,
+    margin: "180px auto 0",
+    textAlign: "center",
+    padding: "80px 40px",
+    borderRadius: 40,
+    background:
+      "linear-gradient(120deg, rgba(99,102,241,0.15), rgba(34,211,238,0.15), rgba(168,85,247,0.15))",
+    boxShadow: "0 40px 80px rgba(0,0,0,0.6)",
+  }}
+>
+  <h2
+    style={{
+      fontSize: 36,
+      fontWeight: 800,
+      marginBottom: 24,
+    }}
+  >
+    Let’s Build Something Great
+  </h2>
 
-        <p
-          style={{
-            fontSize: 20,
-            color: "#d1d5db",
-            marginBottom: 40,
-          }}
-        >
-          I’m always open to collaboration, learning opportunities, and
-          real-world projects.
-        </p>
+  <p
+    style={{
+      fontSize: 20,
+      color: "#d1d5db",
+      marginBottom: 50,
+    }}
+  >
+    I’m always open to collaboration, learning opportunities, and real-world projects.  
+    Reach out via email or check out my GitHub!
+  </p>
 
-        <motion.a
-          href="https://github.com/Hsabra22/"
-          target="_blank"
-          whileHover={{ scale: 1.06 }}
-          whileTap={{ scale: 0.98 }}
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: 14,
-            padding: "18px 32px",
-            borderRadius: 20,
-            background: "white",
-            color: "black",
-            fontSize: 18,
-            fontWeight: 700,
-            textDecoration: "none",
-            boxShadow: "0 20px 40px rgba(255,255,255,0.2)",
-          }}
-        >
-          <Github size={22} /> Visit My GitHub
-        </motion.a>
+  <div style={{ display: "flex", justifyContent: "center", gap: 24, flexWrap: "wrap" }}>
+    <motion.a
+      href="mailto:hassan.sabra2005@gmail.com"
+      whileHover={{ scale: 1.06 }}
+      whileTap={{ scale: 0.98 }}
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        gap: 14,
+        padding: "18px 32px",
+        borderRadius: 20,
+        background: "#6366f1",
+        color: "white",
+        fontSize: 18,
+        fontWeight: 700,
+        textDecoration: "none",
+        boxShadow: "0 20px 40px rgba(99,102,241,0.4)",
+        transition: "all 0.3s ease",
+      }}
+    >
+      ✉ Contact Me
+    </motion.a>
+
+    <motion.a
+      href="https://github.com/Hsabra22/"
+      target="_blank"
+      whileHover={{ scale: 1.06 }}
+      whileTap={{ scale: 0.98 }}
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        gap: 14,
+        padding: "18px 32px",
+        borderRadius: 20,
+        background: "white",
+        color: "black",
+        fontSize: 18,
+        fontWeight: 700,
+        textDecoration: "none",
+        boxShadow: "0 20px 40px rgba(255,255,255,0.2)",
+        transition: "all 0.3s ease",
+      }}
+    >
+      <Github size={22} /> Visit My GitHub
+    </motion.a>
+  </div>
       </motion.section>
 
-      {/* FOOTER */}
+
+
       <footer
         style={{
           marginTop: 180,
