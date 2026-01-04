@@ -19,7 +19,7 @@ export default function Home() {
       frontend: ["Next.js", "TypeScript"],
       backend: ["AI Integration", "Supabase", "REST APIs"],
       style: ["Tailwind CSS", "Shadcn UI"],
-      demo: "https://resumify-ten.vercel.app/",
+      demo: "https://resumify-2ddk.vercel.app/",
     },
     {
       id: 3,
@@ -41,7 +41,6 @@ export default function Home() {
         fontFamily: "Inter, system-ui, sans-serif",
       }}
     >
-      {/* HERO */}
       <motion.section
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
@@ -102,7 +101,6 @@ export default function Home() {
         </a>
       </motion.section>
 
-      {/* ABOUT */}
       <motion.section
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
