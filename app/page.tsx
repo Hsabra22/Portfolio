@@ -31,7 +31,7 @@ export default function Home() {
     },
     {
       id: 4,
-      title: "Trainify ",
+      title: "Trainify Generator",
       frontend: ["Next.js", "TypeScript"],
       backend: ["AI Integration", "Supabase", "REST APIs"],
       style: ["Tailwind CSS", "Shadcn UI"],
@@ -41,23 +41,30 @@ export default function Home() {
 
   return (
     <main
-      style={{
-        minHeight: "100vh",
-        background: "radial-gradient(circle at top, #111827, #000000 70%)",
-        color: "white",
-        fontFamily: "Inter, system-ui, sans-serif",
-      }}
-    >
-      <motion.section
-        initial={{ opacity: 0, y: 60 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        style={{
-          maxWidth: 1100,
-          margin: "0 auto",
-          textAlign: "center",
-        }}
-      >
+  style={{
+    minHeight: "100vh",
+    background: "radial-gradient(circle at top, #111827, #000000 70%)",
+    color: "white",
+    fontFamily: "Inter, system-ui, sans-serif",
+    margin: 0,
+    padding: 0,
+    overflowX: "hidden",
+    boxSizing: "border-box",
+  }}
+>
+  <motion.section
+    initial={{ opacity: 0, y: 60 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1 }}
+    style={{
+      width: "100%",
+      maxWidth: "1100px",
+      margin: "0 auto",
+      padding: 0,
+      textAlign: "center",
+      boxSizing: "border-box",
+    }}
+  >
         <h1
           style={{
             fontSize: "clamp(56px, 7vw, 90px)",
