@@ -29,6 +29,14 @@ export default function Home() {
       style: ["Tailwind CSS", "Shadcn UI"],
       demo: "https://hotel-management-system-indol-pi.vercel.app/",
     },
+    {
+      id: 4,
+      title: "Trainify ",
+      frontend: ["Next.js", "TypeScript"],
+      backend: ["AI Integration", "Supabase", "REST APIs"],
+      style: ["Tailwind CSS", "Shadcn UI"],
+      demo: "https://trainifygen.vercel.app/",
+    },
   ];
 
   return (
@@ -37,7 +45,6 @@ export default function Home() {
         minHeight: "100vh",
         background: "radial-gradient(circle at top, #111827, #000000 70%)",
         color: "white",
-        padding: "100px 32px",
         fontFamily: "Inter, system-ui, sans-serif",
       }}
     >
@@ -258,7 +265,7 @@ export default function Home() {
           style={{
             display: "grid",
             gap: 100,
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
           }}
         >
           {projects.map((p, i) => (
