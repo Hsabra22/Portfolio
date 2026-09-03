@@ -1,5 +1,4 @@
 import { Inter } from "next/font/google";
-// @ts-expect-error Next.js processes global CSS imports at build time.
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { TooltipProvider } from "@/components/ui/tooltip";
